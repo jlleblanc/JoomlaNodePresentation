@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
 /**
  * Black theme for reveal.js.
- * 
+ *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 /*********************************************
@@ -11,6 +11,8 @@
 body {
   background: #111111;
   background-color: #111111;
+  background-image: url(../../img/inner.jpg);
+  background-position: center;
 }
 
 .reveal {
