@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			    <section>
+			        <h1>Node.js and Joomla!</h1>
+			        <p>Joe LeBlanc</p>
+			        <p>Joomla! World Conference 2012</p>
+			    </section>
+				<section>
+				    <section>
+				        <h2>Who is Joe?</h2>
+				    </section>
+					<section>
+						<div>
+			                <h2>8 years Mambo/Joomla experience</h2>
+				        </div>
+					</section>
+					<section>
+						<div>
+			                <h2>Works for Manos in Austin, TX</h2>
+				        </div>
+					</section>
+					<section>
+						<div>
+			                <h2>Lynda.com author on Joomla! and Node.js</h2>
+				        </div>
+					</section>
+				</section>
+			    <section>
+			        <h2>Extracurricular</h2>
+			        <div>
+			            <br>
+			        </div>
+			        <div>
+			            <ul>
+			                <li>No path to social media&nbsp;rock-stardom</li>
+			                <li>No tips on search engine optimization</li>
+			                <li>No monetization strategy</li>
+			                <li>No extensions you install and forget about</li>
+			            </ul>
+			        </div>
+			    </section>
+			    <section>
+			        <section>
+			            <h2>What is Node?</h2>
+			            <div>
+			                <img src="img/nodejs-green.png">
+			            </div>
+			        </section>
+			        <section>
+			            <div>It's JavaScript without a browser.</div>
+			        </section>
+			        <section>
+			            <h2>JavaScript, really?</h2>
+			            <div>
+			                <br>
+			            </div>
+			            <div>
+			                <ul>
+			                    <li>Node uses Chrome's V8 JavaScript engine</li>
+			                    <li>Standard JavaScript + handful of globals</li>
+			                    <li>Each file has its own scope</li>
+			                    <li>Asynchronous JavaScript fully embraced</li>
+			                </ul>
+			            </div>
+			        </section>
+			        <section>
+			            <h2>What can you build?</h2>
+			            <div>
+			                <br>
+			            </div>
+			            <div>
+			                <ul>
+			                    <li>Server-side web applications</li>
+			                    <li>Command-line scripts</li>
+			                    <li>WebSocket applications</li>
+			                    <li>Flying robots with RESTful APIs</li>
+			                    <li>Anything you want</li>
+			                </ul>
+			            </div>
+			        </section>
+			        <section>
+			            <h2>Node servers</h2>
+			            <div>
+			                <br>
+			            </div>
+			            <div>
+			                <ul>
+			                    <li>Unlike PHP, they stay running</li>
+			                    <li>Designed to be non-blocking</li>
+			                    <li>Directly face the web</li>
+			                </ul>
+			            </div>
+			        </section>
+			        <section>
+			            <h2>Modules</h2>
+			            <div>
+			                <br>
+			            </div>
+			            <div>
+			                <ul>
+			                    <li>Self contained code</li>
+			                    <li>Core modules ands community modules</li>
+			                    <li>Manage project dependencies with NPM</li>
+			                </ul>
+			            </div>
+			        </section>
+			        <section>
+			            <h2>Example - Taco.js</h2>
+			            <div>
+			                <br>
+			            </div>
+			            <pre><code class="javascript">var http = require('http');
+
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.end("&lt;h1&gt;Here's a taco!&lt;/h1&gt;");
+}).listen(8888, '127.0.0.1');
+
+console.log('Taco server ready at http://127.0.0.1:8888');
+			        </code></pre>
+			    </section>
+			</section>
+			<section>
+			    <section>
+			        <h2>What is Joomla?</h2>
+			    </section>
+			    <section>
+			        <h2>Srsly?</h2>
+			    </section>
+			</section>
+			<section>
+			    <div>Node sounds awesome, but what does it offer me if I build all of my websites with Joomla?</div>
+			</section>
+			<section>
+			    <h2>JavaScript Linting</h2>
+			    <div>
+			        <br>
+			    </div>
+			    <div>
+			        <ul>
+			            <li>Catch JavaScript bugs <b>before</b> running</li>
+			            <li>Can be done on save with Editor/IDE plugins&nbsp;<br>
+			            </li>
+			            <li>...or through the command line</li>
+			        </ul>
+				    <div>
+				        <br>
+				    </div>
+			        <pre><code class="shell"># First time install
+$ npm install -g jshint
+$ jshint path/to/file.js</code></pre>
+			    </div>
+			</section>
+			<section>
+			    <h2>Template reloads</h2>
+			    <div>
+			        <br>
+			    </div>
+			    <div>
+			        <ul>
+			            <li>Use Grunt to automate your build process</li>
+			            <li>Watch LESS files, HTML files, anything...</li>
+			            <li>Automatically reload the browser on save</li>
+			        </ul>
+			    </div>
+			</section>
+			<section>
+			    <h2>Joomla Node Module</h2>
+			    <div>
+			        <br>
+			    </div>
+			    <div>
+			        <ul>
+			            <li>Connect Joomla database and sessions to Node</li>
+			        </ul>
+			        <div style="text-align: left;">
+			            <br>
+			        </div>
+			    </div>
+			    <pre><code class="javascript">var joomla = require('joomla');
+
+joomla('/path/to/joomla/site');
+
+joomla.db.query('SELECT * FROM #__users', function (rows) {
+  rows.forEach(function  (row) {
+    console.log({
+      name: row.name,
+      username: row.username,
+      id: row.id
+    });
+  });
+});</code></pre>
+			</section>
+			<section>
+			    <section>
+			        <h2>Socket.io + Joomla</h2>
+			        <div>
+			            <br>
+			        </div>
+			        <div>
+			            <ul>
+			                <li>Write WebSocket code quickly</li>
+			                <li>Connect to Joomla using the Joomla module</li>
+			                <li>Authenticate Joomla sessions through Node</li>
+			                <li>Chat room!</li>
+			            </ul>
+			        </div>
+			    </section>
+			    <section>
+			        <h2>Socket.io Backend</h2>
+			        <pre><code class="javascript">var joomla = require('joomla'),
+  connect = require('connect'),
+  io = require('socket.io');
+
+joomla('/path/to/joomla/site');
+
+var app = connect()
+          .use(connect.static('public'))
+          .listen(8000);
+
+var chat_room = io.listen(app);
+
+chat_room.sockets.on('connection', function (socket) {
+  // your socket logic here
+});</code></pre>
+			    </section>
+			    <section>
+			        <h2>Socket Connection</h2>
+			        <pre><code class="javascript">// emitting a message to one user
+socket.emit('error',
+  {message: 'Please log in to join the chat'}
+);
+
+// emitting a message to all connected users
+socket.on('chat', function  (data) {
+  chat_room.sockets.emit('chat',
+    {message:  j_user.username + ' says: ' + data.message}
+  );
+});
+</code></pre>
+			    </section>
+			    <section>
+			        <h2>Socket Frontend</h2>
+			        <pre><code class="html">&lt;!-- Include the Socket.io library in our template --&gt;
+&lt;script src="http://localhost:8000/socket.io/socket.io.js"&gt;
+&lt;/script&gt;</code></pre>
+			    <p>
+			    <br>
+			</p>
+			<pre><code class="javascript">// Connect to the websocket
+var socket = io.connect('http://localhost:8000');
+
+
+// send messages to the server
+jQuery('#chat_box').keypress(function (event) {
+  if (event.which == 13) {
+    socket.emit('chat', {message: jQuery('#chat_box').val()});
+    jQuery('#chat_box').val('');
+  }
+});</code></pre>
+			</section>
+			<section>
+			    <h2>Socket Frontend</h2>
+			    <pre><code class="javascript">// Receiving data from the socket
+
+socket.on('entrance', function  (data) {
+  // show data.message on screen
+});
+
+socket.on('disconnect', function  (data) {
+  // show data.message on screen
+});
+
+socket.on('chat', function  (data) {
+  // show data.message on screen
+});
+
+socket.on('error', function  (data) {
+  // show data.message on screen
+});</code></pre>
+			</section>
+			</section>
+			<section>
+			    <h2>Questions?</h2>
+			</section>
+			<section>
+			    <h2>Thanks!</h2>
+			</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

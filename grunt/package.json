@@ -1,0 +1,12 @@
+{
+  "name": "joomla_grunt",
+  "version": "0.0.0",
+  "description": "1- What is this? \t* This is a Joomla! installation/upgrade package to version 3.0.x \t* Joomla! Official site: http://www.joomla.org \t* Joomla 3.0 version history - http://docs.joomla.org/Joomla_3.0_version_history \t* Detailed changes in the Changelog: http://joomlacode.org/gf/project/joomla/scmsvn/?action=browse&path=/development/trunk/administrator/&view=log",
+  "main": "grunt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
